@@ -20,11 +20,17 @@ import { EditorialPage } from '../pages/editorial/editorial';
 import { GeneroPage } from '../pages/genero/genero';
 import { UsuariosAddPage } from '../pages/usuarios-add/usuarios-add';
 import { RolesAddPage } from '../pages/roles-add/roles-add';
+import { GeneroAddPage } from '../pages/genero-add/genero-add';
+import { EditorialAddPage } from '../pages/editorial-add/editorial-add';
+import { LibrosAddPage } from '../pages/libros-add/libros-add';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginProvider } from '../providers/login/login';
 import { RolesProvider } from '../providers/roles/roles';
+import { GenerosProvider } from '../providers/generos/generos';
+import { EditorialProvider } from '../providers/editorial/editorial';
+import { LibrosProvider } from '../providers/libros/libros';
 
 
 @NgModule({
@@ -39,7 +45,10 @@ import { RolesProvider } from '../providers/roles/roles';
     EditorialPage,
     GeneroPage,
     UsuariosAddPage,
-    RolesAddPage
+    RolesAddPage,
+    GeneroAddPage,
+    EditorialAddPage,
+    LibrosAddPage
   ],
   imports: [
     BrowserModule,
@@ -58,7 +67,10 @@ import { RolesProvider } from '../providers/roles/roles';
     EditorialPage,
     GeneroPage,
     UsuariosAddPage,
-    RolesAddPage
+    RolesAddPage,
+    GeneroAddPage,
+    EditorialAddPage,
+    LibrosAddPage
   ],
   providers: [
     StatusBar,
@@ -70,6 +82,9 @@ import { RolesProvider } from '../providers/roles/roles';
     SMS,
     CurrencyPipe,
     RolesProvider,
+    GenerosProvider,
+    EditorialProvider,
+    LibrosProvider,
   ]
 })
 export class AppModule {}

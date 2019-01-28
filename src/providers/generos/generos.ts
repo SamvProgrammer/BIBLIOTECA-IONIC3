@@ -2,20 +2,19 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/observable';
 import { direcciones } from '../../assets/direcciones';
-
 /*
-  Generated class for the RolesProvider provider.
+  Generated class for the GenerosProvider provider.
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
 @Injectable()
-export class RolesProvider {
+export class GenerosProvider {
 
   private direccion = "";
 
   constructor(public http: HttpClient) {
-    this.direccion = direcciones.roles;
+    this.direccion = direcciones.generos;
   }
 
   public gets():Observable<any>{

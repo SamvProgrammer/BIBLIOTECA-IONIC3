@@ -4,18 +4,18 @@ import { Observable } from 'rxjs/observable';
 import { direcciones } from '../../assets/direcciones';
 
 /*
-  Generated class for the RolesProvider provider.
+  Generated class for the EditorialProvider provider.
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
 @Injectable()
-export class RolesProvider {
+export class EditorialProvider {
 
   private direccion = "";
 
   constructor(public http: HttpClient) {
-    this.direccion = direcciones.roles;
+    this.direccion = direcciones.editorial;
   }
 
   public gets():Observable<any>{
